@@ -14,7 +14,7 @@ and storing in a var named as client_api. so furture we can use it.
 
 #### Authenticating to the Kubernetes API server
 
-But what if you want to list all the automated ingress of a GKE or any other  Cluster, you must need to authenticate the configuration
+But what if you want to list the  api resources of a GKE or any other  Cluster, you must need to authenticate the configuration
 
 `configuration.api_key = {"authorization": "Bearer" + bearer_token}` 
 
@@ -22,7 +22,7 @@ I've used Bearer Token which enable requests to authenticate using an access key
 
 #### get the list of all api resources:
 
-call the function get_pods(cluster_details)
+call the function get_api_resources(cluster_details)
 
 And run following command:
 

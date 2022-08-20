@@ -20,7 +20,6 @@ def __get_kubernetes_client(bearer_token,api_server_endpoint):
         print("TYPE :{}".format(type(e)))
         return None
 
-
 def get_api_resources(cluster_details):
 
     client_api= __get_kubernetes_client(
@@ -32,7 +31,6 @@ def get_api_resources(cluster_details):
     print("get the api resources: {}".format(ret))
            
  
-
 if __name__ == '__main__':
     cluster_details={
         "bearer_token":"GKE-Bearer-Token",
